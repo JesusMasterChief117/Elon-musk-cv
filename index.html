@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sign in to your Elon Musk CV workspace."
+    />
+    <title>Sign in | Elon Musk CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="auth-shell">
+      <section class="brand-panel" aria-label="Elon Musk CV">
+        <a class="brand" href="/" aria-label="Elon Musk CV home">
+          <span class="brand-mark" aria-hidden="true">E</span>
+          <span>Elon Musk <strong>CV</strong></span>
+        </a>
+
+        <div class="brand-copy">
+          <p class="eyebrow">YOUR NEXT MISSION</p>
+          <h1>Build the<br /><span>extraordinary.</span></h1>
+          <p class="intro">
+            Keep your career story ready for its next launch. Sign in to
+            continue to your personal CV workspace.
+          </p>
+        </div>
+
+        <div class="orbit orbit-one" aria-hidden="true"></div>
+        <div class="orbit orbit-two" aria-hidden="true"></div>
+        <div class="orbital-dot" aria-hidden="true"></div>
+        <p class="coordinate" aria-hidden="true">34.0522° N&nbsp; / &nbsp;118.2437° W</p>
+      </section>
+
+      <section class="login-panel">
+        <div class="login-card">
+          <div class="mobile-brand" aria-hidden="true">
+            <span class="brand-mark">E</span>
+            <span>Elon Musk <strong>CV</strong></span>
+          </div>
+          <p class="eyebrow">WELCOME BACK</p>
+          <h2>Sign in to your account</h2>
+          <p class="subtitle">Your next chapter starts here.</p>
+
+          <form id="login-form" novalidate>
+            <div class="field">
+              <label for="email">Email address</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                placeholder="you@example.com"
+                required
+              />
+              <span class="field-error" id="email-error" role="alert"></span>
+            </div>
+
+            <div class="field">
+              <div class="field-heading">
+                <label for="password">Password</label>
+                <a href="#forgot-password">Forgot password?</a>
+              </div>
+              <div class="password-input">
+                <input
+                  id="password"
+                  name="password"
+                  type="password"
+                  autocomplete="current-password"
+                  placeholder="Enter your password"
+                  minlength="8"
+                  required
+                />
+                <button
+                  class="password-toggle"
+                  type="button"
+                  aria-label="Show password"
+                  aria-pressed="false"
+                >
+                  Show
+                </button>
+              </div>
+              <span class="field-error" id="password-error" role="alert"></span>
+            </div>
+
+            <label class="remember">
+              <input type="checkbox" name="remember" />
+              <span class="checkbox" aria-hidden="true"></span>
+              <span>Remember me</span>
+            </label>
+
+            <button class="submit-button" type="submit">
+              <span>Sign in</span>
+              <span class="arrow" aria-hidden="true">→</span>
+            </button>
+            <p class="form-status" id="form-status" role="status"></p>
+          </form>
+
+          <p class="signup">
+            New to the platform? <a href="#create-account">Create an account</a>
+          </p>
+          <p class="legal">
+            By continuing, you agree to our <a href="#terms">Terms</a> and
+            <a href="#privacy">Privacy Policy</a>.
+          </p>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
